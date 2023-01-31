@@ -4,25 +4,149 @@
   <title>Shape Tracker</title>
 </head>
 <body>
-  <h3>Enter three lengths to determine if they can make a triangle.</h3>
-  <form id="triangle-checker-form">
-    <label for="length1">Enter a number:</label>
-    <input id="length1" type="number">
-    <label for="length2">Enter a number:</label>
-    <input id="length2" type="number">
-    <label for="length3">Enter a number:</label>
-    <input id="length3" type="number">
-    <button type="submit">Submit</button>
-  </form>
-  <ul id="response"></ul>
-  <h3>Enter the lengths of a rectangle's two sides to determine its area.</h3>
-  <form id="rectangle-area-form">
-    <label for="rect-length1">Enter a number:</label>
-    <input id="rect-length1" type="number">
-    <label for="rect-length2">Enter a number:</label>
-    <input id="rect-length2" type="number">
-    <button type="submit">Submit</button>
-  </form>
-  <ul id="response2"></ul>
+  <main>
+    <h1>Sudoku using the HTML table tag</h1>
+    <br />
+    <!-- Table tag with a border property representing 2 pixel borders -->
+    <table border="2">
+        <!-- Outermost caption tag for enclosing table information -->
+        <caption>
+            <h4>Sudoku Puzzle</h4>
+            <p><em>Directions</em>: Have each 3x3 square, each row, and each column have a number from 1 - 9. No repeat numbers allowed per row, column, or 3x3 square.</p>
+        </caption>
+        <!-- <thead> tag is commonly used to include informative description of table -->
+        <thead>
+            <!-- The <tr> tag represents the first `row` of the table -->
+            <tr>
+                <!-- These <th> tags are header columns, one for difficulty, and one for the difficulty level (Easy) -->
+                <th colspan="5" style="border: none">Difficulty</th>
+                <th colspan="3" style="border: none">Easy</th>
+            </tr>
+        </thead>
+        <tr id="row-1">
+            <!-- First three cells have a 3, 9, and 8 -->
+            <td>5</td>
+            <td>3</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <!-- empty cells filled with non-breaking spaces to give more whitespace -->
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>7</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr id="row-2">
+            <td>6</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>1</td>
+            <td>9</td>
+            <td>5</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr id="row-3">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>9</td>
+            <td>8</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>6</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr id="row-4">
+            <td>8</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>6</td>
+            <td>&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>3</td>
+        </tr>
+        <tr id="row-5">
+            <td>4</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>8</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>3</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>1</td>
+        </tr>
+        <tr id="row-6">
+            <td>7</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>2</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>6</td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr id="row-7">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>6</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>2</td>
+            <td>8</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+        <tr id="row-8">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>4</td>
+            <td>1</td>
+            <td>9</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>5</td>
+        </tr>
+        <tr id="row-9">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>8</td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td style="border: none"></td>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>7</td>
+            <td>9</td>
+        </tr>
+    </table>
+</main>
 </body>
 </html>
